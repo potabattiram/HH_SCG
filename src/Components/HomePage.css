@@ -1,0 +1,325 @@
+*{
+  font-family: "Lato", sans-serif;
+}
+.homepage-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  padding-top: 8rem;
+  box-sizing: border-box;
+}
+
+.homepage-image {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.homepage-text {
+  text-align: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.homepage-text h2 {
+  font-size: 3.8rem;
+  font-weight: 300;
+  margin-bottom: 6px;
+}
+
+.homepage-text p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+
+.discover-button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.discover-button {
+  --primary-color: #111;
+  --hovered-color: #c84747;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.discover-button p {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.discover-button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+.discover-button p::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "Discover";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.discover-button:hover::after {
+  width: 100%;
+}
+
+.discover-button:hover p::before {
+  width: 100%;
+}
+
+.discover-button:hover svg {
+  transform: translateX(4px);
+  color: var(--hovered-color);
+}
+
+.discover-button svg {
+  color: var(--primary-color);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
+.discover-journey{
+  background: linear-gradient(to bottom, #fcf9f2, #ddead2, #a8ddc7, #63cfd4, #12baeb);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.discover-journey h3{
+  background-color: transparent;
+  color: #7c7a7a;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.discover-journey p{
+  font-size: 18px;
+  color: #7c7a7a;
+  width: 70%;
+  letter-spacing: 1px;
+  background-color: transparent;
+}
+.horizontal-line {
+  width: 20%;
+  height: 0.2px; /* Adjust the height as needed */
+  background-color: #7c7a7a; /* You can change the color */
+  margin: 0 auto; /* Center the line */
+}
+.button {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #FFFFFF; /* Text color */
+  background-color: #007BFF; /* Button background color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.button .arrow {
+  display: inline-block;
+  margin-left: 10px;
+  transition: margin-left 0.3s;
+  background-color: transparent;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Slightly darker shade on hover */
+}
+
+.button:hover .arrow {
+  margin-left: 20px; /* Move arrow more to the right on hover */
+}
+.kirtan-component{
+  padding: 1rem;
+}
+.kirtan-component h2{
+  background-color: transparent;
+  color: #7c7a7a;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #7c7a7a;
+  background-color: transparent;
+}
+
+.description {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #7c7a7a;
+  background-color: transparent;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.form-control {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.form-checkbox {
+  margin-right: 10px;
+  background-color: transparent;
+}
+
+.form-checkbox-label {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  background-color: transparent;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #fff;
+  background-color: #333;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+.social-icon.instagram { background-color: #E1306C; }
+.social-icon.facebook { background-color: #3b5998; }
+.social-icon.youtube { background-color: #FF0000; }
+.social-icon.twitter { background-color: #1DA1F2; }
+
+@media (max-width: 1120px) {
+  .homepage-text h2 {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 880px) {
+  .homepage-text h2 {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 768px) {
+  .homepage-container {
+    padding-top: 8rem;
+    flex-direction: column-reverse;
+  }
+
+  .homepage-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .homepage-text {
+    width: 100%;
+  }
+
+  .homepage-text h2 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  .homepage-text p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .homepage-text h2 {
+    font-size: 1.6rem;
+  }
+  .discover-button{
+    margin: 0 auto;
+  }
+  .homepage-container {
+    padding-top: 10rem;
+  }
+  .homepage-text {
+    text-align: center;
+  }
+}

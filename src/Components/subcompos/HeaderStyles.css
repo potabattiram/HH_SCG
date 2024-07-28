@@ -1,0 +1,32 @@
+
+.appBar {
+  background-color: #fcf9f2;
+  padding: 20px 0;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.toolbar {
+  text-align: center;
+  width: 100%;
+}
+
+.mainTypography {
+  font-family: "Times New Roman", serif;
+  font-weight: 100;
+  font-size: 2rem;
+  text-align: center;
+  color: #7c7a7a;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.subTypography {
+  font-family: "Times New Roman", serif;
+  font-weight: 100;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #7c7a7a;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
